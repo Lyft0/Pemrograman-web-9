@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}   
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header p {
+    font-size: 0.7em;
+}
+
+.diff {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.diff > form > * {
+    margin-bottom : 2px;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.reset button {
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color: rgb(83, 83, 222);
+    color: white;
+    border-radius: 15px;
+}
+
+.reset button:hover{
+    background-color: rgb(22, 22, 230);
+}
+
+/* Board Style */
+
+td {
+    border: 4px solid black;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 65px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr:first-child td{
+    border-top: none;
+}
+
+table tr:last-child td{
+    border-bottom: none;
+}
+
+table tr td:first-child{
+    border-left: none;
+}
+
+table tr td:last-child{
+    border-right: none;
+}
+
+.option {
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+}
+
+.promptgame {
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    background-color: rgba(35, 35, 35, 0.887);
+    position: absolute;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.promptgame * {
+    margin-bottom: 10px;
+}
+
+.promptgame button {
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color: rgb(113, 68, 217);
+    color: white;
+    border-radius: 15px;
+}
+
+.promptgame button:hover{
+    background-color: rgb(132, 98, 210);
+}
+
+
+
+
